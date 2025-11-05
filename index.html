@@ -1,105 +1,114 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="歌手[您的名字]的官方網站">
-    <title>[您的名字] - 歌手官方網站</title>
-    <link rel="stylesheet" href="styles.css"> <!-- 外部樣式表 -->
-    <style>
-        /* 內嵌樣式：簡單設計的樣式 */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background: #222;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        .content {
-            padding: 20px;
-        }
-        .intro, .music, .contact {
-            margin-bottom: 30px;
-        }
-        .intro h2, .music h2, .contact h2 {
-            color: #222;
-        }
-        .intro img {
-            max-width: 250px;
-            border-radius: 50%;
-            margin-top: 20px;
-            border: 4px solid #fff;
-        }
-        .music iframe {
-            width: 100%;
-            height: 350px;
-        }
-        .contact a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        .footer {
-            background-color: #222;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的作品集</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", sans-serif;
+      background-color: #f3f3f3;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background: linear-gradient(180deg, #e3b7c0 0%, #c4c9e3 100%);
+      clip-path: ellipse(75% 55% at 50% 30%);
+      padding: 100px 20px 180px;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      opacity: 0.9;
+    }
+
+    .photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: -90px;
+      border: 5px solid white;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .works {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .work {
+      background: white;
+      border-radius: 15px;
+      padding: 20px 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .work:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    a {
+      text-decoration: none;
+      color: #4b5cc4;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #777;
+      padding-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Leap of Faith</h1>
+    <p>信任上帝是一段終生的旅程，不要獨自行走。</p>
+  </header>
 
-    <header>
-        <h1>[您的名字] 官方網站</h1>
-        <p>音樂是我的生命，謝謝您來到這裡！</p>
-    </header>
+  <img src="myphoto.jpg" alt="我的照片" class="photo">
 
-    <div class="content">
-        <!-- 自我介紹 -->
-        <section class="intro">
-            <h2>關於我</h2>
-            <p>大家好，我是[您的名字]，一位熱愛音樂的歌手。音樂對我來說不僅僅是表演，更是一種情感的表達。我從小便愛上了音樂，無論是流行、搖滾，還是抒情的歌曲，每一種風格都能帶給我不同的靈感與挑戰。</p>
-            <p>我的音樂旅程開始於[具體的開始時期或經歷]，至今我已經發表了[幾張專輯或單曲]，並且有幸在不同的舞台上與大家分享我的音樂。我相信，歌聲是心靈的共鳴，每一首歌都承載著我對生活、對愛情、對夢想的感受。</p>
-            <!-- 個人照片 -->
-            <img src="your-photo.jpg" alt="[您的名字]的照片">
-        </section>
-
-        <!-- 音樂作品 -->
-        <section class="music">
-            <h2>我的音樂作品</h2>
-            <p>以下是我最新的音樂作品，歡迎收聽！</p>
-            
-            <!-- 音樂播放器範例 -->
-            <iframe src="https://www.youtube.com/embed/[歌曲ID]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-            <!-- 如果有多首歌曲，可以再添加 iframe 或其他音樂平台的連結 -->
-            <!-- <iframe src="https://www.youtube.com/embed/[另一首歌曲ID]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-        </section>
-
-        <!-- 聯絡方式 -->
-        <section class="contact">
-            <h2>聯絡我</h2>
-            <p>如果你對我的音樂或任何事務有興趣，歡迎隨時聯繫我！</p>
-            <ul>
-                <li>電子郵件: <a href="mailto:[您的郵件地址]">[您的郵件地址]</a></li>
-                <li>Instagram: <a href="[Instagram連結]" target="_blank">@您的Instagram</a></li>
-                <li>Facebook: <a href="[Facebook連結]" target="_blank">我的Facebook頁面</a></li>
-            </ul>
-        </section>
+  <section>
+    <h2>我的作品集</h2>
+    <div class="works">
+      <div class="work">
+        <a href="work1.pdf" target="_blank">作品一：設計概念</a>
+      </div>
+      <div class="work">
+        <a href="work2.pdf" target="_blank">作品二：專案報告</a>
+      </div>
+      <div class="work">
+        <a href="work3.pdf" target="_blank">作品三：創作集</a>
+      </div>
     </div>
+  </section>
 
-    <!-- 頁腳 -->
-    <div class="footer">
-        <p>&copy; 2025 [您的名字]. 版權所有。</p>
-    </div>
-
+  <footer>
+    © 2025 我的個人網站 | Designed with faith and creativity.
+  </footer>
 </body>
 </html>
